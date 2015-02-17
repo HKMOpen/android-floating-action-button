@@ -73,10 +73,11 @@
         fab:fab_labelsPosition="right">
 
         <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/list_issue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             fab:fab_colorNormal="@color/white"
-            fab:fab_title="Label on the right"
+            fab:fab_title="List issue"
             fab:fab_colorPressed="@color/white_pressed"/>
 
         <com.getbase.floatingactionbutton.FloatingActionButton

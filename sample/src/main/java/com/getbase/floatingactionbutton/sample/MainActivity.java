@@ -4,6 +4,7 @@ import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
@@ -65,5 +66,12 @@ public class MainActivity extends Activity {
 
     // Test that FAMs containing FABs with visibility GONE do not cause crashes
     findViewById(R.id.button_gone).setVisibility(View.GONE);
+
+    findViewById(R.id.list_issue).setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        startActivity(new Intent(MainActivity.this, ListIssueActivity.class));
+      }
+    });
   }
 }
